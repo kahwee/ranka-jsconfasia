@@ -25,7 +25,28 @@ For example, `test.json` is used here. Put your page access tokens and validatio
 ```
 
 
+## Running
+
+Using `nodemon`:
 
 ```
-/usr/local/bin/lt --port 8955 --subdomain=jsconfasiatest
+export NODE_ENV=test && nodemon
+```
+
+Without `nodemon`:
+
+```
+export NODE_ENV=test && node src/index.js
+```
+
+Start `localtunnel` for port `8955`.
+
+```
+lt --port 8955 --subdomain=yoursubdomain
+```
+
+Alternatively:
+
+```
+/usr/local/bin/lt --port 8955 --subdomain=yoursubdomain
 ```
