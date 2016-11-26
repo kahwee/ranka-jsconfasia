@@ -1,0 +1,36 @@
+{
+  "name": "ranka-jsconfasia",
+  "version": "1.0.0",
+  "engines": {
+    "node": "6.x"
+  },
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kahwee/ranka-jsconfasia.git"
+  },
+  "author": "KahWee Teng <t@kw.sg>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kahwee/ranka-jsconfasia/issues"
+  },
+  "homepage": "https://github.com/kahwee/ranka-jsconfasia#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "chrono-node": "^1.2.5",
+    "config": "^1.24.0",
+    "express": "^4.14.0",
+    "gemoji": "^2.0.1",
+    "moment": "^2.17.0",
+    "moment-timezone": "^0.5.9",
+    "nlp_compromise": "^6.5.3",
+    "ranka": "^0.1.5"
+  },
+  "devDependencies": {
+    "standard": "^8.5.0"
+  }
+}
