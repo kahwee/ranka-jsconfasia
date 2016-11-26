@@ -51,7 +51,7 @@ ranka.on('message', (req, res) => {
       const description = gemoji.unicode[last.text].description
       output = `You have ${nlp.noun(description).article()} ${description} ${last.text}!`
     } else {
-      output = `You have a ${last.text}!`
+      output = `You have ${nlp.noun(last.text).article()} ${last.text}!`
     }
     res.sendText(output).exec()
   } else if (req.message.text.match(/(arrange|book|reserve).*(appointment)/i)) {
