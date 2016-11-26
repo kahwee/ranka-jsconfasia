@@ -50,3 +50,17 @@ Alternatively:
 ```sh
 /usr/local/bin/lt --port 8955 --subdomain=yoursubdomain
 ```
+
+## Things to try
+
+* hi
+* Book an appointment next thursday at noon
+* arrange me an appointment for tomorrow at 4 PM
+* i have a pen
+* i have an 🍎
+* i have a 🐂
+* octopus
+
+## License
+
+ISC
