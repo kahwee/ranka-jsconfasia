@@ -55,6 +55,8 @@ ranka.on('message', (req, res) => {
     }
     res.sendText(output).exec()
   } else if (req.message.text.match(/(arrange|book|reserve).*(appointment)/i)) {
+    // Book 1 appointment tomorrow at 4 PM
+    // Book an appointment next thursday at noon
     const datetimes = nlp.sentence(req.message.text).terms.filter((term) => {
       return term.tag === 'Date'
     })
