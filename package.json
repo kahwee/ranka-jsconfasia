@@ -31,6 +31,6 @@
     "ranka": "^1.0.0"
   },
   "devDependencies": {
-    "standard": "^9.0.0"
+    "standard": "^10.0.2"
   }
 }
