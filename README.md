@@ -1,5 +1,7 @@
 # ranka-jsconfasia
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kahwee/ranka-jsconfasia.svg)](https://greenkeeper.io/)
+
 This is for a demo for JS Conf Asia 2016.
 
 ## Installing
