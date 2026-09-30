@@ -1,66 +1,33 @@
 # ranka-jsconfasia
 
-This is for a demo for JS Conf Asia 2016.
+Messenger/Ranka demo for JSConf.Asia 2016. It recognizes greetings,
+appointment phrases, locations, and emoji.
 
-## Installing
-
-You will need `localtunnel` for this demo. Optionally, you can also install `nodemon` that will automatically restart on each change.
+## Setup
 
 ```sh
-npm i
-npm i -g localtunnel
+npm install
+cp config/default.json config/test.json
 ```
 
-## Setting up
-
-Make sure you duplicated `./config/default.json` to `./config/<env>.json`.
-
-For example, `test.json` is used here. Put your page access tokens and validation token inside `test.json`
+Edit `config/test.json` with your own tokens:
 
 ```json
 {
-  "pageAccessToken": "AAAAAunK2MwZDZDEAlIAXnUeZABNh0ufYpcteSxfYfxaMMKnhcvYpCrhiwNwXIgCBTN4C2NOI1WPrxJG8SSNHK8ZAcLdIkqNyVFxPSlOPODYIAEhkcfyAO0BAHfOJHXx6ZBNgQySyX0VitRS9l8Hs0PuzsgJgNgMmBGlC6h4p9g1Dj",
-  "validationToken": "2016"
+  "pageAccessToken": "YOUR_PAGE_ACCESS_TOKEN",
+  "validationToken": "YOUR_VALIDATION_TOKEN"
 }
 ```
 
-
-## Running
-
-Using `nodemon`:
+## Run
 
 ```sh
-export NODE_ENV=test && nodemon
+NODE_ENV=test node src/index.js
 ```
 
-Without `nodemon`:
+The server listens on port 8955. An optional HTTPS tunnel must forward that
+port for external webhook callbacks. Try `hi`, `i have a pen`, or an appointment
+phrase with a date. See [src/index.js](src/index.js) for handlers.
 
-```sh
-export NODE_ENV=test && node src/index.js
-```
-
-Start `localtunnel` for port `8955`.
-
-```sh
-lt --port 8955 --subdomain=yoursubdomain
-```
-
-Alternatively:
-
-```sh
-/usr/local/bin/lt --port 8955 --subdomain=yoursubdomain
-```
-
-## Things to try
-
-* hi
-* Book an appointment next thursday at noon
-* arrange me an appointment for tomorrow at 4 PM
-* i have a pen
-* i have an 🍎
-* i have a 🐂
-* octopus
-
-## License
-
-ISC
+This is a historical API demo; current Messenger compatibility is unverified.
+`npm test` is a failing placeholder. License: ISC, as declared in package.json.
